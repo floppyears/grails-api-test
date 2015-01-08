@@ -5,3 +5,6 @@ target/*
 
 # mac
 **/.DS_Store
+
+# sensitive credentials
+grails-app/conf/DataSource.groovy
