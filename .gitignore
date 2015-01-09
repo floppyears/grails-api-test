@@ -8,3 +8,6 @@ target/*
 
 # sensitive credentials
 grails-app/conf/DataSource.groovy
+
+# proprietary database driver
+lib/ojdbc6_g.jar
