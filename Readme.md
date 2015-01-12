@@ -10,7 +10,6 @@ Sample Grails application to evaluate the implementation of a RESTful Web servic
 * Set database configuration in `grails-app/conf/DataSource.groovy`
 
     dataSource {              // see http://grails.org/doc/latest/guide/conf.html#dataSource
-        dbCreate = "validate" // compare configuration with schema without changing database
         readOnly = true       // make database connection read-only
         username = ""         // database user
         password = ""         // database password
