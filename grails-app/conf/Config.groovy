@@ -115,3 +115,13 @@ log4j.main = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+// gorm configuration
+grails.gorm.default.mapping = {
+
+    // disable optimistic locking
+    version false
+
+    // disable auto timestamping
+    autoTimestamp false
+}
