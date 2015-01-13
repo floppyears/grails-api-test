@@ -11,8 +11,6 @@ class Employee {
     String emailAddress
     String employeeStatus
 
-    static hasMany = [jobs: Job]
-
     static mapping = {
 
         // associate Employee class with PYVPASE table
