@@ -1,5 +1,7 @@
 package edu.oregonstate.mist.SampleJerseyAPI
 
+import grails.converters.JSON
+
 class Employee {
 
     Integer id
@@ -48,5 +50,18 @@ class Employee {
         employeeStatus column: "PYVPASE_EMPL_STATUS",
                        sqlType: "VARCHAR2",
                        length: 1
+    }
+
+    def toJSON() {
+        new JSON(
+                [ firstName:      firstName,
+                  middleInitial:  middleInitial,
+                  lastName:       lastName,
+                  osuId:          osuId,
+                  onidLoginId:    onidLoginId,
+                  emailAddress:   emailAddress,
+                  employeeStatus: employeeStatus
+                ]
+        )
     }
 }
