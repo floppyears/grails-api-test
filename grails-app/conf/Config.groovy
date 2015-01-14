@@ -125,3 +125,8 @@ grails.gorm.default.mapping = {
     // disable auto timestamping
     autoTimestamp false
 }
+
+grails.converters.default.pretty.print = true
+
+org.grails.jaxrs.doreader.disable=true
+org.grails.jaxrs.dowriter.disable=true
