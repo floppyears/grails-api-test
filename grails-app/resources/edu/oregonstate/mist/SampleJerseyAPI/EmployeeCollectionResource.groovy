@@ -11,8 +11,8 @@ import javax.ws.rs.POST
 import javax.ws.rs.core.Response
 
 @Path('/api/employee')
-@Consumes(['application/xml','application/json'])
-@Produces(['application/xml','application/json'])
+@Consumes(['application/json'])
+@Produces(['application/json'])
 class EmployeeCollectionResource {
 
     def employeeResourceService
